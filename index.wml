@@ -1,0 +1,48 @@
+<wml>
+<display>
+<font name="MONOBD15.FNT" vspace="1"></font>
+<!-- Main  Screen - First Menu Displayed -->
+
+<card id="main" title="" ontimer="#domain" alerts="on">
+   <if condition="device.product_name = QLn420">
+      <goto_card href="INDEX420.WML"/>
+   </if>
+   <if condition="device.product_name ! QLn420">
+	   <if condition="device.product_name_submodel = hc">
+	      <goto_card href="INDEX420.WML"/>
+	   </if>
+	   <goto_card href="#domain"/>
+   </if>
+</card>
+
+<card id="domain" title="" ontimer="#domain" alerts="on">
+	<timer value="50"></timer>
+
+    <button_map id="up_button_down">
+        <a href="QCKCNTMK.WML"></a>
+    </button_map>
+
+    <br/>
+    <if condition="zpl.no_errors_boot_done = yes">
+        <p align="center" pre-allcaps="on" allcaps="on">PRINTER READY</p>
+    </if>
+    <br/>
+
+    <p align="left">        LINK-OS </p>
+    <p >$(appl.link_os_version)</p>
+    <br/>
+
+    <if condition="interface.network.active.ip_addr ! 0.0.0.0">
+	<p align="center">$(interface.network.active.ip_addr)</p>
+    </if>
+    <br/>
+
+    <p align="center" pre-allcaps="on" allcaps="on">$(wlan.mac_addr)</p>    
+    <br/>
+    
+    <p align="center" pre-allcaps="on" allcaps="on">$(device.unique_id)</p>
+    <br/>
+
+</card>
+</display>
+</wml>
