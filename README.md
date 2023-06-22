@@ -1,4 +1,4 @@
-Color Panel + 十字キーモデルのWMLサンプル
+Mono Panel + 十字キーモデルのWMLサンプル
 
 ### セットアップ手順
 
