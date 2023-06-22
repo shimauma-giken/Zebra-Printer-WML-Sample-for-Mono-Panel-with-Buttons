@@ -24,7 +24,9 @@ Color Panel + 十字キーモデルのWMLサンプル
 ---
 
 
-### WMLファイルを改変するときの注意点
+## WMLファイルを改変するときの注意点
+
+<br>
 
 1. オリジナルをfiletypeなどでダウンロードした場合、一部文字化けが発生することがある。"WML ERROR"の原因となるので、修正しておくこと。
     <pre>
@@ -32,6 +34,19 @@ Color Panel + 十字キーモデルのWMLサンプル
     </pre>
 
 1. WMLファイルはUTF-8で保存すること。
+
+<br>
+<br>
+
+## V68.19.7Z以降をご利用の場合
+
+<br>
+
+下記リンクの手順も合わせて実施ください。
+
+https://supportcommunity.zebra.com/s/article/QLn-index-wml-not-functioning-using-V68-19-7z-or-later-firmware?language=ja
+
+
 
 
 
