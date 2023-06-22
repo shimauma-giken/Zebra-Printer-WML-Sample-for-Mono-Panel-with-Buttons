@@ -16,7 +16,8 @@ Color Panel + 十字キーモデルのWMLサンプル
 1. プリンタにINDEX.WMLを送信する。
 1. プリンタを再起動する。
 1. 液晶表示が変更されていることを確認する。
-![](./Mono-Panel-Image.jpg)
+   
+    ![](./Mono-Panel-Image.jpg)
 
 <br>
 <br>
